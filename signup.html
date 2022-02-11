@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href = "C:/Users/admin/Code/Naya/naya.css"; rel = "stylesheet"; type = "text/css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <title>
+            SignUp!
+        </title>
+        <link rel="icon" href="C:\Users\admin\Code\Naya\favicon1.ico" type="image/ico" sizes="96x96">
+        <div  style="background-image: url('line-particles.jpg');">
+
+        
+    </head>
+    <body>
+        <div class="infotainly"><h1><b>Infotainly</b></h1><br></div>
+        <div class="logintxt"><h2>Sign Up!</h2></div>
+        <div class="login">
+            <span class=" border">
+            <form class="container">
+                <div class = "row">
+                <div class=" m-2 col">
+                    <label for="FirstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="FirstName" placeholder="Enter First Name">
+                </div>
+                <div class=" m-2 col">
+                    <label for="LastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="FirstName" placeholder=" Enter Last Name">
+                </div>
+                <div class="mb-3">
+                    <label for="Email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="Email" placeholder="Enter Email id">
+                </div>
+                <div class="mb-3">
+                    <label for="text" class="form-label">UserName</label>
+                    <input type="text" class="form-control" id="UserName" placeholder="New UserName">
+                </div>
+                <div class="mb-3">
+                    <label for="Phone" class="form-label">Phone no.</label>
+                    <input type="tel" class="form-control" id="Phone" placeholder="Enter Phone no.">
+                </div>
+                <div class="col">
+                    <label for="NewPass" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="NewPass" placeholder="Enter New Password">
+                </div>
+                <div class="col">
+                    <label for="PassTwo" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="PassTwo" placeholder="Confirm Password">
+                </div>
+                <br><br>
+                <div class="mb-3">
+                    <label for="Dob" class="form-label">Date of Birth</label>
+                    <input type="date" class="form-control" id="Dob">
+                </div>
+                <div class="form-floating">
+                    <select class="form-select" id="Gender" aria-label="Gender">
+                    <option selected>Select</option>
+                    <option value="1">Female</option>
+                    <option value="2">Male</option>
+                    <option value="3">Rather Not Say</option>
+                    </select>
+                    <label for="floatingSelect">Select Gender</label>
+                </div>
+                </div>
+                <!-- <input class=" m-3 btn btn-dark" type="submit" value="Sign me Up!" onclick="signin();"> -->
+                <a button type="button" class="m-3 btn btn-dark" id="button" href="C:\Users\admin\Code\Naya\home.html">Sign Me Up!</button></a>
+
+            </form>
+            </span>
+            <script>
+                    function pw(){
+                    var NewPass =  document.getElementbyID('password').value;
+                    var PassTwo =   document.getElementbyID('confirmpassword').value;
+
+                    if (NewPass == ""){
+                        alert("Field cannot be empty.");
+
+                        
+                    }
+                    else if (NewPass != PassTwo){
+                        alert("Password didnt match try again.");
+                        return false
+
+                    }
+                    else if(NewPass == PassTwo){
+                        alert("Password Match");
+                        location.href = 'C:\Users\admin\Code\Naya\home.html';
+                        
+                    }
+                    return false
+
+                    var user.email;
+                    var user.Name;
+                }
+            </script>
+    </div>
+
+    </body>
+</html>
